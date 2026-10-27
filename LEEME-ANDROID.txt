@@ -1,0 +1,15 @@
+TESTPRO – INSTALACIÓN EN ANDROID
+
+Esta carpeta contiene una versión PWA (app web instalable) preparada para alojarse en HTTPS y añadirse a la pantalla de inicio de Android. No es un APK independiente.
+
+FORMA MÁS FÁCIL (sin programar):
+1. En un ordenador, descomprime el ZIP.
+2. Sube el CONTENIDO de esta carpeta a un alojamiento estático HTTPS. Por ejemplo, Netlify Drop (https://app.netlify.com/drop) permite arrastrar la carpeta del sitio y publica una URL.
+3. Abre esa URL en Google Chrome en tu Android.
+4. Pulsa el menú ⋮ de Chrome y elige “Instalar aplicación” o “Añadir a pantalla de inicio” (el texto puede variar).
+5. Abre TestPro desde el icono que aparecerá en el teléfono. Tras la primera carga, la app y los archivos incluidos se pueden abrir sin conexión; las funciones del navegador pueden variar según versión.
+
+IMPORTANTE:
+- Para que Android permita la instalación PWA y el funcionamiento sin conexión, debe servirse desde HTTPS (o localhost para desarrollo). Abrir index.html directamente desde un archivo no activa la instalación PWA.
+- Las notas y los fallos se guardan localmente en ese navegador/dispositivo. No se sincronizan entre dispositivos.
+- Para actualizar la app tras cambiar los archivos, se debe volver a publicar la carpeta; puede ser necesario cerrar y volver a abrir la app para que se actualice.
